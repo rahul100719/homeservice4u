@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Electrician & Plumber in Ambala | AC, RO & Geyser Repair – HomeService4U</title>
-<meta name="description" content="Electrician, plumber, AC repair, RO & geyser service in Ambala. Fast doorstep service. Call or WhatsApp now.">
-<link rel="canonical" href="https://homeservice4u.in/">
-<meta name="theme-color" content="#2563eb">
+<title>Electrician & Plumber in Ambala | AC, RO & Geyser – HomeService4U</title>
+<meta name="description" content="Book electrician, plumber, AC repair, RO & geyser service in Ambala. Fast doorstep service.">
 
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -15,89 +13,58 @@
 :root{
   --primary:#2563eb;
   --dark:#0f172a;
-  --whatsapp:#25D366;
+  --wa:#25D366;
   --bg:#f8fafc;
-  --radius:18px;
+  --radius:16px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{
-  font-family:'Plus Jakarta Sans',sans-serif;
-  background:var(--bg);
-  color:var(--dark);
-  line-height:1.6;
-}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--dark)}
 
-/* CALL BAR */
 .call-bar{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:#0f172a;
-  color:#fff;
-  text-align:center;
-  padding:10px;
-  z-index:2000;
-  font-size:14px;
+  position:fixed;top:0;width:100%;
+  background:#0f172a;color:#fff;
+  text-align:center;padding:10px;
+  z-index:3000;font-size:14px;
 }
 .call-bar a{color:#25D366;font-weight:800;text-decoration:none}
 
-/* NAV */
 nav{
-  position:fixed;
-  top:45px;
-  left:50%;
+  position:fixed;top:44px;left:50%;
   transform:translateX(-50%);
-  width:92%;
-  max-width:1200px;
-  background:#fff;
-  padding:12px 20px;
-  border-radius:50px;
-  display:flex;
-  justify-content:space-between;
+  width:94%;max-width:1200px;
+  background:#fff;padding:12px 20px;
+  border-radius:40px;
+  display:flex;justify-content:space-between;
   align-items:center;
-  z-index:1500;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  z-index:2000;
 }
 .logo{font-weight:800;color:var(--primary);text-decoration:none}
 .nav-btn{background:var(--primary);color:#fff;padding:10px 18px;border-radius:25px;text-decoration:none}
 
-/* HERO */
 .hero{
-  padding:160px 6% 60px;
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  align-items:center;
+  padding:170px 6% 60px;
+  max-width:1200px;margin:auto;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:30px;align-items:center;
 }
-.hero h1{
-  font-size:clamp(2rem,5vw,3.5rem);
-  line-height:1.2;
-}
-.hero p{margin:18px 0;color:#64748b}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem)}
+.hero p{margin:16px 0;color:#64748b}
+
 .hero-btns a{
-  display:inline-block;
-  margin:8px 8px 0 0;
+  display:inline-block;margin:6px;
   padding:14px 24px;
   border-radius:30px;
-  font-weight:700;
-  text-decoration:none;
+  font-weight:700;text-decoration:none;
 }
 .btn-call{background:var(--primary);color:#fff}
-.btn-wa{background:var(--whatsapp);color:#fff}
-.hero img{
-  width:100%;
-  border-radius:var(--radius);
-}
+.btn-wa{background:var(--wa);color:#fff}
 
-/* SERVICES */
-.services{
-  padding:60px 6%;
-  max-width:1200px;
-  margin:auto;
-}
+.hero img{width:100%;border-radius:var(--radius)}
+
+.services{padding:60px 6%;max-width:1200px;margin:auto}
 .services h2{text-align:center;margin-bottom:30px}
+
 .grid{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -107,93 +74,97 @@ nav{
   position:relative;
   border-radius:var(--radius);
   overflow:hidden;
+  cursor:pointer;
 }
-.card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  min-height:200px;
+.card img{width:100%;height:230px;object-fit:cover}
+.badge{
+  position:absolute;top:12px;left:12px;
+  background:rgba(0,0,0,.75);color:#fff;
+  padding:6px 12px;border-radius:20px;
+  font-size:14px;font-weight:700;
 }
-.card span{
-  position:absolute;
-  bottom:0;
-  width:100%;
-  padding:15px;
-  background:rgba(0,0,0,.7);
-  color:#fff;
-  font-weight:600;
+.overlay{
+  position:absolute;bottom:0;width:100%;
+  padding:12px;text-align:center;
+  background:linear-gradient(transparent,rgba(0,0,0,.8));
+  color:#fff;font-weight:700;
 }
 
-/* BOOK FORM */
 #book{
   background:#0f172a;
   padding:60px 6%;
   border-radius:40px 40px 0 0;
 }
 .form-box{
-  max-width:420px;
-  margin:auto;
+  max-width:420px;margin:auto;
   color:#fff;
 }
-.form-box h2{text-align:center;margin-bottom:10px}
+.form-box h2{text-align:center;margin-bottom:12px}
+
 input,select{
-  width:100%;
-  padding:14px;
+  width:100%;padding:14px;
   margin-bottom:14px;
   border-radius:12px;
-  border:none;
+  border:none;font-size:15px;
 }
+
+/* 🔄 BOOKING BUTTON */
 button{
   width:100%;
   padding:14px;
-  border:none;
   border-radius:30px;
+  border:none;
   background:var(--primary);
   color:#fff;
   font-size:16px;
-  font-weight:700;
-}
-
-/* FLOATING WHATSAPP */
-.wa-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:var(--whatsapp);
-  width:56px;
-  height:56px;
-  border-radius:50%;
+  font-weight:800;
+  cursor:pointer;
   display:flex;
   align-items:center;
   justify-content:center;
-  z-index:2000;
+  gap:10px;
+}
+button:disabled{
+  opacity:0.7;
+  cursor:not-allowed;
 }
 
-/* FOOTER */
-footer{
+/* ⏳ SPINNER */
+.spinner{
+  width:18px;
+  height:18px;
+  border:3px solid rgba(255,255,255,.4);
+  border-top:3px solid #fff;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+.success{
+  display:none;
+  background:#dcfce7;
+  color:#166534;
+  padding:16px;
+  border-radius:12px;
   text-align:center;
-  padding:30px;
-  color:#64748b;
-  font-size:14px;
+  margin-bottom:14px;
 }
 
-/* 📱 MOBILE FIXES */
+.wa-float{
+  position:fixed;bottom:20px;right:20px;
+  background:var(--wa);
+  width:56px;height:56px;
+  border-radius:50%;
+  display:flex;align-items:center;
+  justify-content:center;
+  z-index:3000;
+}
+
 @media(max-width:900px){
-  .hero{
-    grid-template-columns:1fr;
-    text-align:center;
-    padding-top:190px;
-  }
-  .hero-btns a{
-    width:100%;
-    text-align:center;
-  }
-  .grid{
-    grid-template-columns:1fr;
-  }
-  nav{
-    width:94%;
-  }
+  .hero{grid-template-columns:1fr;text-align:center}
+  .grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -205,47 +176,81 @@ footer{
 </div>
 
 <nav>
-  <a class="logo" href="#">HomeService4U</a>
-  <a class="nav-btn" href="#book">Book</a>
+  <a href="#" class="logo">HomeService4U</a>
+  <a href="#book" class="nav-btn">Book Service</a>
 </nav>
 
 <section class="hero">
   <div>
     <h1>Electrician, Plumber & AC Repair in Ambala</h1>
-    <p>Fast, verified home services in Ambala. Call or WhatsApp for instant booking.</p>
+    <p>Tap a service below or fill the form to book instantly.</p>
     <div class="hero-btns">
-      <a class="btn-call" href="tel:+918222033645">📞 Call Now</a>
-      <a class="btn-wa" href="https://wa.me/918222033645">WhatsApp</a>
+      <a href="tel:+918222033645" class="btn-call">📞 Call</a>
+      <a href="https://wa.me/918222033645" class="btn-wa">WhatsApp</a>
     </div>
   </div>
-  <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
-       alt="Home service technician in Ambala">
+  <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80">
 </section>
 
 <section class="services">
-  <h2>Home Services in Ambala</h2>
-  <div class="grid">
-    <div class="card"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e"><span>Electrician</span></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1504148455328-c376907d081c"><span>Plumber</span></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4"><span>AC Repair</span></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7"><span>RO & Geyser</span></div>
+<h2>Select a Service</h2>
+<div class="grid">
+  <div class="card" onclick="selectService('Electrician')">
+    <span class="badge">Electrician</span>
+    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e">
+    <div class="overlay">Tap to Book</div>
   </div>
+
+  <div class="card" onclick="selectService('Plumber')">
+    <span class="badge">Plumber</span>
+    <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c">
+    <div class="overlay">Tap to Book</div>
+  </div>
+
+  <div class="card" onclick="selectService('AC Repair')">
+    <span class="badge">AC Repair</span>
+    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4">
+    <div class="overlay">Tap to Book</div>
+  </div>
+
+  <div class="card" onclick="selectService('RO / Geyser')">
+    <span class="badge">RO / Geyser</span>
+    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7">
+    <div class="overlay">Tap to Book</div>
+  </div>
+</div>
 </section>
 
 <section id="book">
   <div class="form-box">
-    <h2>Book a Service</h2>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="tel" placeholder="Phone" required>
-      <select required>
+    <h2>Book Service</h2>
+
+    <div class="success" id="successMsg">
+      ✅ Booking submitted successfully!  
+      <br>We will call you within 5–10 minutes.
+    </div>
+
+    <form id="bookingForm"
+          action="https://formsubmit.co/ajax/rahulrathore2455@gmail.com"
+          method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Service Booking - HomeService4U">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+
+      <select name="service" id="serviceSelect" required>
         <option value="">Select Service</option>
         <option>Electrician</option>
         <option>Plumber</option>
         <option>AC Repair</option>
         <option>RO / Geyser</option>
       </select>
-      <button>Confirm Booking</button>
+
+      <button type="submit" id="submitBtn">
+        <span id="btnText">Confirm Booking</span>
+      </button>
     </form>
   </div>
 </section>
@@ -254,9 +259,48 @@ footer{
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="26">
 </a>
 
-<footer>
-  © 2026 HomeService4U – Ambala
-</footer>
+<script>
+function selectService(service){
+  document.getElementById('serviceSelect').value = service;
+  document.getElementById('book').scrollIntoView({behavior:'smooth'});
+}
+
+document.getElementById('bookingForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+
+  const form = e.target;
+  const btn = document.getElementById('submitBtn');
+  const btnText = document.getElementById('btnText');
+  const successBox = document.getElementById('successMsg');
+
+  btn.disabled = true;
+  btnText.innerHTML = '<div class="spinner"></div> Booking...';
+
+  const data = new FormData(form);
+
+  try{
+    const res = await fetch(form.action,{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    });
+
+    if(res.ok){
+      form.style.display='none';
+      successBox.style.display='block';
+      successBox.scrollIntoView({behavior:'smooth',block:'center'});
+    }else{
+      alert('Submission failed. Please try again.');
+      btn.disabled = false;
+      btnText.innerText = 'Confirm Booking';
+    }
+  }catch(err){
+    alert('Network error. Please try again.');
+    btn.disabled = false;
+    btnText.innerText = 'Confirm Booking';
+  }
+});
+</script>
 
 </body>
 </html>
